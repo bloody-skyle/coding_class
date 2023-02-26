@@ -34,16 +34,30 @@
             border-bottom: 4px solid grey;
         }
         #left-button{ 
-            width:200px;
-            height:100px;
+            width:400px;
+            height:200px;
             border-top-left-radius: 10px; 
             border-top-right-radius: 10px; 
             border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px; 
-            background: white;
+            border-bottom-right-radius: 10px;
+            background: lightgray;
             position: absolute;
-            top: 272px;
-            left: 348px;
+            top: 522px;
+            left: 198px;
+            cursor: pointer;
+        }
+        #right-button{ 
+            width:400px;
+            height:200px;
+            border-top-left-radius: 10px; 
+            border-top-right-radius: 10px; 
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: lightgray;
+            position: absolute;
+            top: 522px;
+            left: 925px;
+            cursor: pointer;
         }
     </style>
     <body>
@@ -52,13 +66,14 @@
 
             </div>
             <div id="left">
-                <div id="left-button">
-                    <input type="button" class="button" value="문제 풀기">
-                </div>
+                <button id="left-button">
+                    문제 풀기
+                </button>
             </div>
             <div id="right">
-                <div id="button">
-                </div>
+                <button id="right-button">
+                    코딩 배우기
+                </button>
             </div>
         </div>
     </body>
