@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #fullscreen{
+            width:1500px;
+            height:1000px;
+            background-color: gray;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+        #top{
+            width:1492px;
+            height:192px;
+            background-color: white;
+            border: 4px solid grey;
+        }
+        #left{
+            width:744px;
+            height:796px;
+            float:left;
+            background-color: white;
+            border-left: 4px solid grey;
+            border-right: 2px solid grey;
+            border-bottom: 4px solid grey;
+        }
+        #right{
+            width:744px;
+            height:796px;
+            float:right;
+            background-color: white;
+            border-right: 4px solid grey;
+            border-left: 2px solid grey;
+            border-bottom: 4px solid grey;
+        }
+        #left-button{ 
+            width:200px;
+            height:100px;
+            border-top-left-radius: 10px; 
+            border-top-right-radius: 10px; 
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px; 
+            background: white;
+            position: absolute;
+            top: 272px;
+            left: 348px;
+        }
+    </style>
+    <body>
+        <div id="fullscreen">
+            <div id="top">
+
+            </div>
+            <div id="left">
+                <div id="left-button">
+                    <input type="button" class="button" value="문제 풀기">
+                </div>
+            </div>
+            <div id="right">
+                <div id="button">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
