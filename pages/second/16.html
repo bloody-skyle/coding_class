@@ -7,17 +7,16 @@
         <link rel="icon" href="../../images/icon.jpg">
     </head>
     <style>
-        
         #fullscreen{
-            width:1000px;
-            height:1000px;
+            width:1150px;
+            height:950px;
             background-color: gray;
             position: absolute;
             left: 50%;
             transform: translate(-50%, 0%);
         }
         #top{
-            width:1000px;
+            width:1150px;
             height:200px;
             background-color: white;
             border-top: 4px solid grey;
@@ -26,8 +25,8 @@
             border-bottom: 2px solid black;
         }
         #down{
-            width:1000px;
-            height:800px;
+            width:1150px;
+            height:750px;
             background-color: white;
             border-top: 2px solid black;
             border-left: 4px solid black;
@@ -37,37 +36,11 @@
         .problem{ 
 	        font-size: 1.5em;
         }
-        @keyframes width{
-            from{width:1000px;}
-            to{width:1500px;}
-        }
-        .width{
-            animation: width 0.35s;
-            animation-fill-mode: forwards;
-        }
-        .width-for-fullscreen{
-            animation: width 0.35s 3 alternate;
-            animation-fill-mode: forwards;
-        }
-        .custom-tooltip {
-            --bs-tooltip-bg: var(--bs-primary);
-        }
     </style>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <div class="container">
             <div class="width-for-fullscreen" id="fullscreen">
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">연속되는 숫자들</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">1-2-3-4나 12-8-4, 15-15-15-15-15와 같은 모양의 숫자들</div>
-                        </div>
-                    </div>
-                </div>
                 <div class="width" id="top">
                 </div>
                 <div class="width" id="down">
@@ -83,17 +56,20 @@
                                 <li><a class="dropdown-item" href="14.html">14번 문제</a></li>
                                 <li><a class="dropdown-item" href="15.html">15번 문제</a></li>
                                 <li><a class="dropdown-item" href="16.html">16번 문제</a></li>
-                                <li><a class="dropdown-item" href="13.html">17번 문제</a></li>
-                                <li><a class="dropdown-item" href="14.html">18번 문제</a></li>
-                                <li><a class="dropdown-item" href="15.html">19번 문제</a></li>
-                                <li><a class="dropdown-item" href="16.html">20번 문제</a></li>
+                                <li><a class="dropdown-item" href="17.html">17번 문제</a></li>
+                                <li><a class="dropdown-item" href="18.html">18번 문제</a></li>
+                                <li><a class="dropdown-item" href="19.html">19번 문제</a></li>
+                                <li><a class="dropdown-item" href="20.html">20번 문제</a></li>
                                 <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="../first/first.html">1페이지</a></li>
                                 <li><a class="dropdown-item" href="second.html">2페이지</a></li>
+                                <li><a class="dropdown-item" href="../third/third.html">3페이지</a></li>
+                                <li><a class="dropdown-item" href="../fourth/fourth.html">4페이지</a></li>
                             </ul>
                         </div>
                     </div>
-                    <h2>문제 16번</h2>
-                    <class class="problem">자연수 n을 입력받고 정수를 n개만큼 입력받은뒤 수를 적절하게 바꿔서 <button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal">연속적인 숫자들</button>로 만들때, 바꿔야 할 수들의 최소값을 구하시오.</class>
+                    <h2>　문제 16번</h2>
+                    <class class="problem">　자연수 n을 입력받고 정수를 n개만큼 입력받은뒤 수를 적절하게 바꿔서 연속하는 숫자들로 만들때, 바꿔야 할 수들의 최소값을 구하시오.</class>
                     <div data-pym-src='https://www.jdoodle.com/plugin' data-language="java"
                         data-version-index="0" data-libs="mavenlib1, mavenlib2">public class Main{
     public static void main(String[] args){
